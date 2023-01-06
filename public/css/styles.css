@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+body header nav ul {
+    display: none;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 90%;
+}
+
+div.top-header {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header p {
+    text-align: center;
+}
+
+header div.logo {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+header nav {
+    font-size: 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .form .input {
+    display: flex;
+    font-size: 12px;
+    background-color: #FFF;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    color: #666;
+    padding: 2px;
+    margin: 10%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    color: #666;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 95%;
+    height: 30px;
+    margin: 10px 0px 20px 0px;
+    padding: 7px;
+    width: 40px;
+}
+
+.icons {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+article div.main-article {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.description {
+    display: none;
+}
+
+.discount {
+    width: 70%;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+main section article img {
+    width: 100%;
+    text-align: center;
+}
+
+main section article i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+img.logo {
+    width: 40%;
+    text-align: center;
+    padding: 15px;
+}
+
+h2.copy-header {
+    font-size: 12px;
+    text-align: center;
+}
+
+div.main-header-top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px
+}
+
+footer div {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.footer-icons {
+    color: #0044AA;
+}
+
+form.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input#username {
+    font-family: 'Roboto';
+    width: 75%;
+    border-radius: 5px;
+}
+
+input#password {
+    font-family: 'Roboto';
+    width: 75%;
+    border-radius: 5px;
+}
+
+input#name {
+    font-family: 'Roboto';
+    width: 75%;
+    border-radius: 5px;
+}
+
+input#dateofbirth {
+    font-family: 'Roboto';
+    width: 75%;
+    border-radius: 5px;
+}
+
+input#address {
+    font-family: 'Roboto';
+    width: 75%;
+    border-radius: 5px;
+}
+
+.input-button {
+    font-family: 'Roboto';
+    width: 75%;
+    background-color: #0044AA;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.register-main {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.register-main div {
+    margin: 10px;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+.register-buttons {
+    background-color: #0044AA;
+    color: #FFF;
+    border-radius: 3px;
+    width: 20%;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+
+@media (min-width: 361px) {
+    .description {
+        display: block;
+    }
+    body header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    body header div.burger-menu {
+        display: none;
+    }
+    .products article {
+        width: 45%;
+    }
+    .price {
+        width: 100%;
+    }
+    .discount {
+        width: 100%;
+    }
+    div.top-header {
+        padding: 5%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 80%;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav ul li {
+        margin: 8px;
+    }
+    @media (min-width: 769px) {
+        .products article {
+            width: 20%;
+        }
+    }
+}
