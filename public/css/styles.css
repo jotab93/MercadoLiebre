@@ -286,7 +286,7 @@ input#address {
 
 @media (min-width: 361px) {
     .description {
-        display: block;
+        display: none;
     }
     body header nav ul {
         display: flex;
@@ -314,7 +314,7 @@ input#address {
     }
     header nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
         flex-wrap: nowrap;
         font-size: 80%;
@@ -327,8 +327,44 @@ input#address {
         margin: 8px;
     }
     @media (min-width: 769px) {
+        footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            text-align: center;
+            padding: 25px;
+            inline-size: auto;
+        }
+        .copyright-text {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
         .products article {
             width: 20%;
+        }
+        main section article h4 {
+            display: none;
+        }
+        main section article:hover {
+            box-shadow: 0px 0px 10px rgb(100 100 100);
+        }
+        main section article:hover .description {
+            display: block;
+        }
+        .fa-truck {
+            transition: all 500ms;
+        }
+        main section article:hover .fa-truck {
+            transform: rotate(-90deg);
+        }
+        footer div i {
+            color: #0044AA;
+            transition: transform .2s;
+        }
+        footer div i:hover {
+            color: #EAC926;
+            transform: scale(1.5);
         }
     }
 }
